@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------header漢堡-桌機板02 ------------------- */
+nav{
+    display: flex;
+    justify-content: space-around;
+    /* space-around
+    在每行上均勻分配彈性元素。相鄰元素間距離相同。
+    每行第一個元素與行首對齊，每行最後一個元素與行尾對齊。 */
+    align-items: center;
+    /* center:對齊交錯軸線中央 */
+    min-height: 8vh;
+    background-color:#d3d1d1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.nav-links{
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+    width: 60%;
+}
+.nav-links a{
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.nav-links li{
+    list-style: none;
+}
+.burger div{
+    width: 25px;
+    height: 5px;
+    color: rgb(226, 226, 226);
+    margin: 5px;
+}
+.burger{
+    /* display: none; */
+}

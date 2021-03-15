@@ -1,0 +1,54 @@
+svg {
+    border: 3px solid #eee;
+    display: block;
+    margin: 1em auto;
+  }
+  p {
+    color: #aaa;
+    text-align: center;
+    margin: 2em 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ---------------------------------- */
+  /* stroke ：邊框的顏色
+  stroke-width：邊框的寬度
+  stroke-linecap：邊框端點的屬性 ( butt ( 預設 )、square、round )
+  stroke-linejoin：邊框接合尖角的屬性 ( miter ( 預設 )、round、bevel )
+  stroke-dasharray：虛線 */
+ 
+  .cls-1,
+  .cls-2 {
+      fill: none;
+      stroke: #000;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-width: 15px;
+  }
+
+  .cls-2 {
+      stroke-dasharray: 24.86 49.73;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

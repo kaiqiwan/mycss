@@ -1,0 +1,1862 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Arial, Helvetica, sans-serif';
+    box-sizing: border-box; 
+}
+@font-face { 	
+    font-family: '清松手寫體2';	
+    src:url("../google-font/另外下載字型/JasonHandwriting-master/JasonHandwriting2.ttf");
+} 
+/* --------------------------統一管理共用尺寸-------------------------------- */
+/* -----------------------------手機板-------------------------- */
+/* ---------------------欄位 -------------------*/
+.col-6-max{
+    width: 50%;
+    /* background-image: url("../google-font/另外下載字型/JasonHandwriting-master/JasonHandwriting2.ttf"); */
+}
+.col-12-max{
+    width: 100%;
+}
+.col-max-70{
+    width: 70%;
+}
+.col-max-80{
+    width: 80%;
+}
+/* .col-max-40{
+    width: 40%;
+} */
+.col-right{
+    margin-right: 0;
+    /* display: flex;
+    justify-content: flex-end; */
+
+}
+.col-left{
+    margin-left: 0;
+}
+/* -----------------共用高度---------------- */
+.height_30_max{
+    height: 1.875rem;
+}
+.height_30-top_max{
+    padding: 1.875rem 1.875rem;
+}
+
+
+/* ------------------文字---------------------- */
+
+/* 文字固定在DIV寬度左右對齊 */
+.text-justify{
+text-align: justify;
+/* 使文字左右對齊 */
+text-justify: inter-ideograph;
+/* 自動算 "字跟字" 之間的空隙,來排齊內容 */
+line-height: 2rem;
+}
+
+/* 文字向左對齊 */
+.text-left{
+    text-align: left;
+}
+p{
+    margin-bottom: 2.5rem;
+}
+
+/*---------------- DIV方向位置控制---------------- */
+.right-0{
+    right: 0;
+}
+.left-0{
+    left: 0;  
+}
+.margin-auto{
+    margin: 0 auto; 
+
+}
+.margin-Sidebar_15{
+    margin: 0 15px; 
+    /* margin:上下 左右 */
+}
+.display-flex{
+    display: flex;
+}
+/* ----------------------------電腦版---------------------------- */
+/* ----------------------共用寬度------------------- */
+/* 一欄 */
+.col-xl-12{
+    width: 100%;
+}
+/* 兩欄 */
+.col-xl-6{
+    width: 50%;
+}
+/* 三欄 */
+.col-xl-4{
+    width: 33.333333%;
+}
+/* 四欄 */
+.col-xl-3{
+    width: 25%;
+}
+/* ---------------------------- */
+.col-xl_30{
+    width: 30%;
+}
+.col-xl-40{
+    width: 40%;
+}
+.col-xl-50{
+    width: 50%;
+}
+.col-xl-60{
+    width: 60%;
+}
+.col-xl-70{
+    width: 70%;
+    height: 50px;
+}
+
+/* 該:root選擇可以讓您針對DOM中最高級別的“父”元素，或文檔樹。
+在CSS選擇器第3級規範中將其定義為“結構偽類”，
+這意味著它用於根據內容與父內容和同級內容的關係來對內容進行樣式設置。 
+(意思就是可以直接更改網頁原本既有的所有預設值)*/
+
+
+/* ----------------------共用高度------------------- */
+.height_50{
+    height: 3.125rem;
+}
+.height_100{
+    height: 6.25rem;
+}
+.height_150{
+    height: 9.375rem;
+}
+.height_250{
+    height: 15.625rem;
+}
+.height_350{
+    height: 21.875rem;
+}
+.height_400{
+    height: 25rem;
+}
+
+/* --------------------------------漢堡header選單-手機板------------------------------------- */
+/* .header {
+    height: 6.25rem;
+    background-color: #d3d1d1;
+    position: relative;
+    align-items: center; */
+    /* justify-content: center; */
+    /* width: 100%;
+    display: flex;
+    justify-content: center; */
+    /* border: 1px solid red; */
+    /* position: fixed; */
+    /* display: flex; */
+
+        /* width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        z-index: 500; */
+}
+
+/* #menu_control {
+    position: absolute;
+    z-index: -2;
+    opacity: 0;
+} */
+
+/* .header .header_logo {
+    width: 6rem; */
+    /* height: 5rem; */
+    /* margin-left: 10px; */
+    /* position: absolute; */
+    /* left: 10px; */
+    /* padding: 10px 10px; */
+    /* transform: translateY(-50%); */
+}
+
+/* .header_logo a {
+    display: block; */
+    /* height: 5rem; */
+    /* width: 6rem;
+} */
+
+/* .header .header_logo img {
+    vertical-align: top; */
+    /* middle將元素的中間與基線對齊，再加上父對象的x高度的一半。 */
+    /* align-items: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 2px rgb(71, 71, 71));
+} */
+
+/* .menu_btn {
+    width: 6rem;
+    height: 5rem;
+    background-color: #d3d1d1;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px; */
+    /* z-index: 999; */
+/* } */
+
+/* .menu_btn span {
+    opacity: 0; */
+    /* opacity屬性指定了一個元素的不透明度 */
+    /* width: 1px;
+    height: 1px;
+    display: block; */
+    /* overflow: hidden; */
+    /* overflow:hidden; //自動隱藏超出的文字或圖片 */
+/* } */
+
+/* 漢堡選單的三條線box-shadow製作 */
+/* .menu_btn::before { */
+    /* ::before 會在物件內容的前方加入資料 */
+    /* content: ""; */
+    /* content和"::before"/"::after"是一組的 */
+    /* position: absolute;
+    height: 2px;
+    width: 30px;
+    right: 2px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 8px 0px #000, 0px -8px 0px #000; */
+    /* box-shadow 區塊陰影 */
+    /* box-shadow:x軸,y軸,模糊,色彩 */
+    /* z-index: 800; */
+}
+
+/* .nav_banner { */
+    /* width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red; */
+    /* width: 60%;
+
+} */
+
+/* nav { */
+    /* display: none; */
+    /* width: 80%;
+    height: calc(100vh-50px); */
+    /* calc()算術運算式,可加減乘除 */
+    /* calc(100vh-50px) */
+    /* 100vh視窗高度 */
+    /* background-color:#d3d1d1; */
+    /* position: absolute; */
+    /* top: 6.25rem; */
+    /* right: 0; */
+    /* right: -100%;
+    transition: .5s;
+    justify-content: space-around; */
+    /* border: 1px solid red; */
+    /* z-index: 200;
+} */
+
+/* nav a {
+    display: block;
+    text-decoration: none; */
+    /* text-decoration文字修飾 */
+    /* color: #000;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+}
+
+#menu_control:checked~.header nav {
+    right: 0;
+}
+.nav_banner nav .header_btn1{
+    width: 10.4375rem;
+    height: 2.6625rem;
+}
+.nav_banner nav .header_btn2{
+    width: 2.0625rem;
+    height: 2.0625rem;
+}
+.nav_banner img{
+    filter: drop-shadow(3px 3px 3px rgb(71, 71, 71));
+} */
+
+/* -------------漢堡header選單-手機板02----------- */
+
+
+
+
+/* --------------------------------header_move-手機板------------------------------------- */
+.body_content-move{
+    padding: 1.875rem 1.875rem;
+    /* margin-top: 6.25rem; */
+    display: block;
+}
+/* .mask_move{
+    -webkit-mask-image: url("../img/300ppi/img-橫框1_遮罩.png");
+    mask-image遮罩
+    position: relative;
+    left: -150px;
+    top: -200px;
+
+} */
+.iframe_move {
+    -webkit-mask-image: url("../img/300ppi/img-橫框1_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    /* left: -1rem; */
+    /* width: 100%; */
+    /* position: absolute; */
+    /* width: 19.6875rem;
+    height: 11.0625rem; */
+    /* width: 75%; */
+    /* width: 84vw;
+    height: 26vh; */
+    /* width: 315px;
+    height: 177px; */
+} 
+
+.border-bg {
+    position: relative;
+    /* width: 338px; */
+    /* height: 90px; */
+    width: 315.2px;
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.move-img-border{
+    position: absolute;
+    /* width: 338px; */
+    /* left:-20px; */
+    height: 177px;
+    width: 315px;
+    z-index: 50;
+    top: -8px;
+    left: -32px;
+}
+
+.border-bg img {
+    position: absolute;
+    /* top: -8px;
+    left: -33px; */
+    width: 108%;
+    height: 105%;
+    /* width: 100%;
+    height: 100%; */
+    z-index: 50;
+    
+}
+.border-bg_img{
+    filter: drop-shadow(3px 3px 3px rgb(36, 35, 35));
+}
+/* 磚塊*/
+.move_bricks{
+    /* overflow: hidden; */
+}
+.bricks_move1{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    /* left: 80px; */
+    /* top: 300px; */
+    z-index: -1;
+    
+}
+.move-btn1-1{
+    position: absolute; 
+    left: 70px;
+    top: 300px;
+}
+.move-btn1-2{
+    position: absolute; 
+    left: 210px;
+    top: 340px;
+}
+
+.bricks_move1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*---------------------------------------------- menu-手機板-------------------------------- */
+.body_menu{
+    display: flex;
+}
+.body_menu .menu_p{
+    /* line-height: 2rem; */
+    padding: 2rem 0rem 0rem 1rem;
+}
+.menu_Censorship{
+    filter: drop-shadow(2px 2px 2px rgb(71, 71, 71));
+}
+/* -------menu-bricks 磚塊_手機板 ------- */
+.menu-bricks{
+    position: relative;
+}
+.bricks_menu{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.bricks_menu img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.menu-btn1-1{
+    right: 0px;
+    top: 280px;
+    z-index: -1;
+}
+.menu-btn1-2{
+    right: 250px;
+    top: 150px;
+    z-index: -1;
+}
+.menu-btn1-3{
+    right: 270px;
+    top: 170px;
+    z-index: -1;
+}
+.menu-btn1-4{
+    display: none;
+}
+/* ---------------------------------------menu換圖輪播_手機板-------------------------------------- */
+.container {
+    /* width: 50%; */
+    /* height: vh; */
+    /* margin: 0 auto; */
+}
+
+.your-class {
+    /* height: 100px; */
+}
+
+
+
+
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+}
+
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+
+}
+
+.slick-prev {
+    left: -55px;
+}
+
+.slick-next {
+    right: -25px;
+}
+/* ----------詳細菜單menu----------- */
+.Detailed-menu{
+    padding: 0rem 1.875rem 1rem 1.875rem;
+    position: relative;
+    display: flex;
+    justify-content:flex-end;
+    /* overflow: hidden; */
+}
+.Detailed-menu_btn{
+    width: 7.5rem;
+    height: 2rem;
+    position: absolute;
+    right: 30px;
+    top: -30px;
+}
+.Detailed-menu_btn img{
+    width: 100%;
+    height: 100%;
+    /* transform: ; */
+    filter: drop-shadow(2px 2px 2px rgb(71, 71, 71));
+}
+.Detailed-menu_p{
+    transform: translate(0.75rem,-1.5rem);
+}
+/* --------menu換圖輪播_手機板---------- */
+.container_menu{
+    padding: 0rem 1.875rem;
+    display: block;
+}
+.carousel-inner{
+    /* background: linear-gradient(rgba(255, 255, 255, 0.831), rgba(255, 255, 255, 0.7)); */
+}
+.carousel-item img{
+    /* background: linear-gradient(rgba(255, 255, 255, 0.831), rgba(255, 255, 255, 0.7)); */
+    /* position: relative;
+    z-index: 50; */
+}
+.img-p {
+    position: absolute;
+    /* bottom: 0;
+    right: 0; */
+    bottom: 0.1rem;
+    right: 1.5rem;
+    color: #000;
+}
+/* 右箭頭 */
+.carousel-control-next-icon{
+    background-image: url("../img/72ppi/右箭頭.png");
+}
+/* 左箭頭 */
+.carousel-control-prev-icon{
+    background-image: url("../img/72ppi/左箭頭.png");
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    display: inline-block;
+    width: 25px;
+    height: 41px;
+    /* background:#000 no-repeat center center; */
+    /* opacity: 1; */
+
+    background-size: 100% 100%;
+}
+.container_menu-min{
+    display:none ;
+}
+ /* --------------------------------------------內文_手機板----------------------------- */
+ /* ------------內文-手機板_共用---------------- */
+ .border-bg_img_content,
+ .border-bg_img_content2,
+ .border-bg_img_content4,
+ .border-bg_img_content5,
+ .border-bg_img_content6,
+ .border-bg_img_content9,
+ .border-bg_img_content10,
+ .border-bg_img_content12,
+ .border-bg_img_content13,
+ .border-bg_img_content15,
+ .border-bg_img_content17{
+    filter: drop-shadow(3px 3px 3px rgb(71, 71, 71));
+ }
+
+
+ /* -----------01-橫寬1-----------  */
+ .body_content{
+    padding: 1.875rem 1.875rem;
+    /* margin-top: 6.25rem; */
+    display: block;
+}
+ .border-bg_content {
+    position: relative;
+    width: 315px;
+    height: 150px;
+    width: 100%;
+}
+
+.content-border_1-1{
+    width: 100%;
+    z-index: 50;
+
+}
+.border-bg_img_content {
+    /* mask: url(/img/300ppi/img-橫框1_遮罩.png) ; */
+    position: absolute;
+    top: -16px;
+    right: -15px;
+    width: 79%;
+    height: 119%;
+    /* width: 15px;
+    height: 100px; */
+    z-index: 50;
+}
+.original-img_1{
+    position: absolute;
+    right: 0;
+    /* 要站畫面70% */
+    -webkit-mask-image: url("../img/300ppi/img-橫框1_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    z-index: 40;
+}
+.img_content_1{
+    width: 100%;
+    height: 100%;
+}
+/* 磚塊 */
+.bricks_content_1{
+    position: relative;
+    /* overflow: hidden; */
+}
+.content_bricks-1{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+    /* overflow: hidden; */
+}
+.content_bricks-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_1-1{
+    right: 100px;
+    top: 10px;
+    z-index: -1;
+}
+.bricks_1-2{
+   left: 0px;
+    top: -30px;
+    z-index: -1;
+}
+.bricks_1-3{
+    left: 0px;
+    top: 300px;
+    z-index: -1;
+}
+
+/*-------------- 02-橫寬2------------- */
+.border-bg_content2 {
+    position: relative;
+    width: 315px;
+    height: 150px;
+    width: 100%;
+}
+
+.content-border_1-2{
+    width: 100%;
+    z-index: 50;
+
+}
+.border-bg_img_content2 {
+
+    position: absolute;
+    top: 6px;
+    left: 9px;
+    width: 64%;
+    height: 89%;
+    /* width: 15px;
+    height: 100px; */
+    z-index: 50;
+}
+.original-img_2{
+    position: absolute;
+    left: 0;
+    /* 要站畫面70% */
+    -webkit-mask-image: url("../img/300ppi/img-橫框2_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    z-index: 40;
+}
+.img_content_2{
+    width: 100%;
+    height: 100%;
+}
+/* 磚塊 */
+.bricks_content_2{
+    position: relative;
+}
+.content_bricks-2{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_2-1{
+    right: 0px;
+    top: 60px;
+    z-index: -1;
+}
+.bricks_2-2{
+   left: 10px;
+    top: 260px;
+    z-index: -1;
+}
+.bricks_2-3{
+    left: 80px;
+    top: 300px;
+    z-index: -1;
+}
+/* ------------------03-橫寬1---------------- */
+/* 磚塊 */
+ .bricks_content_3{
+    position: relative;
+}
+.content_bricks-3{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} 
+ .bricks_3-1{
+    right: 170px;
+    top: 80px;
+    z-index: -1;
+} 
+/* ------------------04-橫寬2---------------- */
+.border-bg_content4 {
+    position: relative;
+    width: 315px;
+    height: 150px;
+    width: 100%;
+    margin: 1.5rem;
+}
+.border-bg_img_content4 {
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    width: 64%;
+    height: 99%;
+    /* width: 15px;
+    height: 100px; */
+    z-index: 50;
+}
+/* 磚塊 */
+.bricks_content_4{
+    position: relative;
+}
+.content_bricks-4{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_4-1{
+    right: 0px;
+    top: 60px;
+    z-index: -1;
+}
+.bricks_4-2{
+   left: -10px;
+    top: 300px;
+    z-index: -1;
+}
+
+/* ------------------05 -直框2--------------- */
+.border-bg_content5 {
+    position: relative;
+    width: 252.15px;
+    height: 337.28px;
+    width: 100%;
+    right: -1rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-border_5-1{
+    width: 100%;
+    z-index: 50;
+
+}
+.border-bg_img_content5 {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    width: 68%;
+    height: 100%;
+    /* width: 15px;
+    height: 100px; */
+    z-index: 50;
+}
+.original-img_5{
+    position: absolute;
+    right: 0;
+    /* 要站畫面70% */
+    -webkit-mask-image: url("../img/300ppi/img-直框2_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    z-index: 40;
+}
+.img_content_5{
+    width: 100%;
+    height: 100%;
+}
+/* 磚塊 */
+.bricks_content_5{
+    position: relative;
+}
+.content_bricks-5{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_5-1{
+    left: 20px;
+    top: -10px;
+    z-index: -1;
+}
+.bricks_5-2{
+   left: 0px;
+    top: 300px;
+    z-index: -1;
+}
+.bricks_5-3{
+   left: 120px;
+    top: 410px;
+    z-index: -1;
+}
+/* ----------------------06--------------------- */
+.border-bg_content6 {
+    position: relative;
+    width: 220.64px;
+    height: 165.4px;
+    width: 100%;
+}
+
+.content-border_6-1{
+    width: 100%;
+    z-index: 50;
+
+}
+.border-bg_img_content6 {
+    /* mask: url(/img/300ppi/img-橫框1_遮罩.png) ; */
+    position: absolute;
+    top: -18px;
+    left: -14px;
+    width: 79%;
+    height: 121%;
+    /* width: 15px;
+    height: 100px; */
+    z-index: 50;
+}
+.original-img_6{
+    position: absolute;
+    left: 0;
+    /* 要站畫面70% */
+    -webkit-mask-image: url("../img/300ppi/img-橫框1_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    z-index: 40;
+}
+.img_content_6{
+    width: 100%;
+    height: 100%;
+}
+/* 磚塊 */
+.bricks_content_6{
+    position: relative;
+}
+.content_bricks-6{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_6-1{
+    right: 10px;
+    top: 90px;
+    z-index: -1;
+}
+.bricks_6-2{
+    right: 150px;
+    top: 280px;
+    z-index: -1;
+}
+/* ----------------------07--------------------- */
+/* 磚塊 */
+.bricks_content_7{
+    position: relative;
+}
+.content_bricks-7{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-7 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_7-1{
+    left: 0px;
+    top: 90px;
+    z-index: -1;
+}
+
+/* ----------------------08--------------------- */
+/* 磚塊 */
+.bricks_content_8{
+    position: relative;
+}
+.content_bricks-8{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-8 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_8-1{
+    right: 10px;
+    top: 90px;
+    z-index: -1;
+}
+.bricks_8-2{
+    right: -30px;
+    top: 330px;
+    z-index: -1;
+}
+/* ----------------------09--------------------- */
+.border-bg_content9 {
+    position: relative;
+    width: 315px;
+    height: 150px;
+    width: 100%;
+}
+
+.content-border_9-2{
+    width: 100%;
+    z-index: 50;
+
+}
+.border-bg_img_content9 {
+
+    position: absolute;
+    top: 6px;
+    right: 9px;
+    width: 64%;
+    height: 89%;
+    /* width: 15px;
+    height: 100px; */
+    z-index: 50;
+}
+.original-img_9{
+    position: absolute;
+    right: 0;
+    /* 要站畫面70% */
+    -webkit-mask-image: url("../img/300ppi/img-橫框2_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    z-index: 40;
+}
+.img_content_9{
+    width: 100%;
+    height: 100%;
+}
+/* 磚塊 */
+
+
+
+/* ----------------------10--------------------- */
+.border-bg_content10 {
+    position: relative;
+    width: 252.15px;
+    height: 337.28px;
+    width: 100%;
+    /* right: -1rem; */
+    left: -1rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-border_10-1{
+    width: 100%;
+    z-index: 50;
+
+}
+.border-bg_img_content10 {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 68%;
+    height: 100%;
+    /* width: 15px;
+    height: 100px; */
+    z-index: 50;
+}
+.original-img_10{
+    position: absolute;
+    left: 0;
+    /* 要站畫面70% */
+    -webkit-mask-image: url("../img/300ppi/img-直框2_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    z-index: 40;
+}
+.img_content_10{
+    width: 100%;
+    height: 100%;
+}
+/* 磚塊 */
+.bricks_content_10{
+    position: relative;
+}
+.content_bricks-10{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-10 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_10-1{
+    right: 50px;
+    top: -5px;
+    z-index: -1;
+}
+.bricks_10-2{
+    right: -10px;
+    top: 300px;
+    z-index: -1;
+}
+
+/* ----------------------11--------------------- */
+/* 磚塊 */
+.bricks_content_11{
+    position: relative;
+}
+.content_bricks-11{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-11 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_11-1{
+    left: 80px;
+    top: 20px;
+    z-index: -1;
+}
+.bricks_11-2{
+    left: 0px;
+    top: 270px;
+    z-index: -1;
+}
+/* ----------------------12--------------------- */
+.border-bg_content12 {
+    position: relative;
+    width: 220.64px;
+    height: 165.4px;
+    width: 100%;
+}
+
+.content-border_12-1{
+    width: 100%;
+    z-index: 50;
+
+}
+.border-bg_img_content12 {
+    /* mask: url(/img/300ppi/img-橫框1_遮罩.png) ; */
+    position: absolute;
+    top: -16px;
+    left: -14px;
+    width: 79%;
+    height: 109%;
+    z-index: 50;
+}
+.original-img_12{
+    position: absolute;
+    left: 0;
+    /* 要站畫面70% */
+    -webkit-mask-image: url("../img/300ppi/img-橫框1_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    z-index: 40;
+}
+.img_content_12{
+    width: 100%;
+    height: 100%;
+}
+/* 磚塊 */
+.bricks_content_12{
+    position: relative;
+}
+.content_bricks-12{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-12 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_12-1{
+    right: -10px;
+    top: 20px;
+    z-index: -1;
+}
+.bricks_12-2{
+    left: 0px;
+    top: 240px;
+    z-index: -1;
+}
+/* ----------------------13--------------------- */
+.border-bg_content13 {
+    position: relative;
+    width: 315px;
+    height: 150px;
+    width: 100%;
+}
+
+.content-border_13-1{
+    width: 100%;
+    z-index: 50;
+
+}
+.border-bg_img_content13 {
+
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 64%;
+    height: 89%;
+    /* width: 15px;
+    height: 100px; */
+    z-index: 50;
+}
+.original-img_13{
+    position: absolute;
+    right: 0;
+    /* 要站畫面70% */
+    -webkit-mask-image: url("../img/300ppi/img-橫框2_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    z-index: 40;
+}
+.img_content_13{
+    width: 100%;
+    height: 100%;
+}
+/* 磚塊 */
+.bricks_content_13{
+    position: relative;
+}
+.content_bricks-13{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-13 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_13-1{
+    left: -20px;
+    top: 20px;
+    z-index: -1;
+}
+/* ----------------------14--------------------- */
+/* 磚塊 */
+.bricks_content_14{
+    position: relative;
+}
+.content_bricks-14{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-14 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_14-1{
+    right: 0;
+    top: 40px;
+    z-index: -1;
+}
+/* ----------------------15--------------------- */
+.border-bg_content15 {
+    position: relative;
+    width: 220.64px;
+    height: 165.4px;
+    width: 100%;
+}
+
+.content-border_15-1{
+    width: 100%;
+    z-index: 50;
+
+}
+.border-bg_img_content15 {
+    position: absolute;
+    top: -18px;
+    right: -15px;
+    width: 79%;
+    height: 121%;
+    /* width: 15px;
+    height: 100px; */
+    z-index: 50;
+}
+.original-img_15{
+    position: absolute;
+    right: 0;
+    /* 要站畫面70% */
+    -webkit-mask-image: url("../img/300ppi/img-橫框1_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    z-index: 40;
+}
+.img_content_15{
+    width: 100%;
+    height: 100%;
+}
+/* 磚塊 */
+.bricks_content_15{
+    position: relative;
+}
+.content_bricks-15{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-15 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_15-1{
+    left: 85px;
+    top: 135px;
+    z-index: -1;
+}
+/* ----------------------16--------------------- */
+/* 磚塊 */
+.bricks_content_16{
+    position: relative;
+}
+.content_bricks-16{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-16 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_16-1{
+    right: 0;
+    top: 80px;
+    z-index: -1;
+    
+}
+.bricks_16-2{
+    right: 10px;
+    top: 100px;
+    z-index: -1;
+}
+
+/* ----------------------17--------------------- */
+.body_img_content17{
+    position: relative;
+}
+.border-bg_content17 {
+    position: relative;
+    width: 214.33px;
+    height: 306.08px;
+    width: 100%;
+    right: -1rem;
+    /* margin-bottom: 1.5rem; */
+}
+
+.content-border_17-1{
+    width: 100%;
+    z-index: 50;
+
+}
+.border-bg_img_content17 {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    width: 59%;
+    height: 88%;
+    z-index: 50;
+}
+.original-img_17{
+    position: absolute;
+    right: 0;
+    /* 要站畫面70% */
+    -webkit-mask-image: url("../img/300ppi/img-直框2_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+    z-index: 40;
+}
+.img_content_17{
+    width: 100%;
+    height: 100%;
+}
+/* 磚塊 */
+.bricks_content_17{
+    position: relative;
+}
+.content_bricks-17{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.content_bricks-17 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.bricks_17-1{
+    left: 80px;
+    top: 20px;
+    z-index: -1;
+}
+.bricks_17-2{
+    left: 0;
+    top: 100px;
+    z-index: -1;
+}
+.bricks_17-3{
+    right: 150px;
+    top: 320px;
+    z-index: -1;
+}
+
+
+.content-p-17{
+position: absolute;
+top: 10rem;
+width: 35%;
+}
+/* -----------------------------------周邊商品------------------------------- */
+.merchandise-content{
+    padding: 1.875rem 1.875rem; 
+    /* overflow: hidden; */
+}
+.merchandise-sign{
+    position: relative;
+    /* padding: 0;
+    margin: 0; */
+    /* width: 40%; */
+    
+}
+.merchandise-sign_p{
+    position: absolute;
+    top: -6rem;
+    right: 0.6rem;
+    filter: drop-shadow(2px 2px 2px rgb(71, 71, 71));
+    width: 150px;
+}
+.container_menu{
+    /* margin-bottom: 4rem; */
+    /* overflow: hidden; */
+}
+/* ----------------------------------------分店資訊--------------------------------- */
+.map_body{
+    padding: 1.875rem 1.875rem 0rem 1.875rem;
+    /* padding: 1.3rem 1.3rem; */
+    /* overflow: hidden; */
+}
+/*-------------- goole地址連結------------- */
+.map_address{
+    width: 315px;
+    height: 236px;
+    /* margin: 0;
+    padding: 0; */
+    /* width: 100%;
+    height: 100%; */
+
+}
+.border-map{
+    /* width: 100%;
+    height: 100%; */
+    width: 315px;
+    height: 236px;
+    position: relative;
+    z-index: 50;
+}
+.border-map img{
+
+}
+.map_iframe{
+    /* width: 100%;
+    height: 100%; */
+    -webkit-mask-image: url("../img/300ppi/img-橫框1_遮罩.png");
+    /* mask-image遮罩 */
+    -webkit-mask-repeat: no-repeat;
+    /* mask-repeat遮罩的影像 不可重複和可重複的方向 */
+    -webkit-mask-size: 100% 100%;
+}
+/* 磚塊 */
+.bricks_address_1{
+    position: relative;
+}
+.address_bricks-1{
+    width: 58px;
+    height: 50px;
+    position: absolute;  
+    z-index: -1;
+}
+.address_bricks-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.address_1-1{
+    left: 0px;
+    top: -250px;
+    z-index: -1;
+}
+.address_1-2{
+    right: 0;
+    top: 80px;
+    z-index: -1;
+}
+.address_1-3{
+    right: 75px;
+    top: -10px;
+    z-index: -1;
+}
+/*---------------分店店家詳細資訊--------------- */
+.map_content{
+    margin-bottom: 1rem;
+}
+.map_h6{
+    
+}
+
+
+/* --------------------footer------------------- */
+footer{
+    /* margin: 0 auto; */
+    /* justify-content:center; */
+    /* text-align: justify; */
+    background-color: #d3d1d1;
+    height: 5rem;
+   
+    
+    
+}
+.footer_h6{
+    text-align:center;
+    line-height: 4rem;
+}
+.footer-fb_btn{
+
+}
+.footer-ig_ntn{
+
+}
+
+
+
+/* --------------------------------------------------------桌機板--------------------------------------------- */
+
+
+/* ---------------------漢堡header選單-桌機板--------------------------- */
+@media screen and (min-width:768px) {
+    body{
+        font-size: 2.5rem;
+        /* line-height: 6rem; */
+    }
+
+    /* 文字固定在DIV寬度左右對齊 */
+    .text-justify{
+    line-height: 4rem;
+    }
+    .body_content-move,
+    .body_content,
+    .container_menu{
+        padding: 3.75rem 3.75rem;
+    }
+
+    .container_menu{
+        padding: 0rem 3.75rem;
+    }
+    .map_body{
+        padding: 3.75rem 3.75rem 0rem 3.75rem;
+    }
+    /* ---------------header漢堡-桌機板 --------------------- */
+    /* .menu_btn {
+        display: none;
+    } */
+/* 
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color:#d3d1d1; */
+        /* align-items: center; */
+
+    /* } */
+
+    /* .header_logo { */
+        /* align-items: center; */
+
+
+    /* } */
+
+    nav {
+        /* position: relative; */
+        /* right: 0;
+        display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* padding-top: 1rem;
+        width: auto;
+        height: auto;
+        top: 0;
+        background: transparent; */
+        /* 設定在桌機機的時候"導覽列"背景是透明的 */
+        
+    }
+
+    /* nav a {
+        border-bottom: none;
+        justify-content: center;
+        align-items: center;
+
+    } */
+    /* -------------------header漢堡-桌機板02 ------------------- */
+    
+    body{
+        font-size: 1rem;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        /* space-around
+        在每行上均勻分配彈性元素。相鄰元素間距離相同。
+        每行第一個元素與行首對齊，每行最後一個元素與行尾對齊。 */
+        align-items: center;
+        /* center:對齊交錯軸線中央 */
+        min-height: 8vh;
+        background-color:#d3d1d1;
+    }
+    .logo{
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+    .nav-links{
+        display: flex;
+        /* background-color: red; */
+        justify-content: space-around;
+        width: 60%;
+    }
+    .nav-links a{
+        color: #000;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        /* font-size: 1rem; */
+    }
+    .nav-links li{
+        list-style: none;
+    }
+    .burger div{
+        width: 25px;
+        height: 5px;
+        color: rgb(226, 226, 226);
+        margin: 5px;
+    }
+    .burger{
+        display: none;
+    }
+
+
+
+
+/* --------------------------------header_move-桌機板------------------------------------- */
+.body_content-move{
+    /* overflow: hidden; */
+    /* display: none; */
+
+}
+.body_move{
+    overflow: hidden;   
+}
+.border-bg{
+    /* overflow: auto; */
+    /* width: 86.25rem;
+    height: 52.375rem; */
+    width: 1150px;
+    height: 500px;
+    transform:translateX(-1.5rem);
+}
+/* 邊寬-父*/
+.move-img-border{
+    position: absolute; 
+    /* width: 338px; */
+    /* left:-20px; */
+    /* width: 75%; */
+    /* width: 86.25rem;
+    height: 52.375rem; */
+    /* width: 1035px;
+    height: 502px; */
+    width: 980px;
+    height: 608px;
+    z-index: 50;
+}
+/* 邊寬 */
+.border-bg img {
+    position: absolute; 
+    /* top: -50px;
+    left: -145px; */
+    /* top: -40px; */
+    /* left: -56px; */
+    /* top: 0; */
+    /* left: 10px; */
+    /* width: 75%;
+    height: 100%; */
+    /* width: 1035px;
+    height: 502px; */
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    top: -15px;
+    left: -65px;
+    
+}
+/* 影片 */
+.iframe_move{
+    /* width: 75%;
+    height: 52.375rem; */
+    /* width: 75vw;
+    height: 60vh; */
+    /* width: 1035px;
+    height: 502px; */
+    /* width: 64.6875rem;
+    height: 31.375rem; */
+    width: 75%;
+    height: 502px;
+
+    
+}
+.move_p{
+    width: 80%;
+    transform: translateX(345px);
+}
+/* 磚塊*/
+.move_bricks{
+    /* overflow: hidden; */
+}
+.bricks_move1{
+    width: 100px;
+    height: 86px;
+    position: absolute;  
+    /* left: 80px; */
+    /* top: 300px; */
+    z-index: -1;
+    
+}
+.bricks_move1 img{
+    width: 100%;
+    height: 100%;
+}
+.move-btn1-1{
+    position: absolute; 
+    left: 900px;
+    top: 300px;
+}
+.move-btn1-2{
+    position: absolute; 
+    left: 820px;
+    top: 350px;
+}
+
+.bricks_move1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* ------------------------------------menu-桌機板------------------------------------------ */
+.body_menu .menu_p{
+    /* line-height: 2rem; */
+    padding: 25rem 0rem 0rem 0rem;
+    transform: translateX(-30px);
+}
+.container_menu{
+    display: none;
+}
+.menu_Censorship{
+    filter: drop-shadow(7px 7px 7px rgb(71, 71, 71));
+}
+
+/* -------menu-bricks 磚塊_桌機板 ------- */
+.menu-bricks{
+    position: relative;
+}
+.bricks_menu{
+    width: 100px;
+    height: 86px;    
+    position: absolute;  
+    z-index: -1;
+}
+.bricks_menu img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.menu-btn1-1{
+    right: 0px;
+    top: 280px;
+    z-index: -1;
+}
+.menu-btn1-2{
+    right: 680px;
+    top: 210px;
+    z-index: -1;
+}
+.menu-btn1-3{
+    right: 1200px;
+    top: 750px;
+    z-index: -1;
+}
+/* 桌機板-bricks */
+.menu-btn1-4{
+    right: 1120px;
+    top: 700px;
+    z-index: -1;
+    display: block;
+}
+
+
+/* ---------------------------------------menu換圖輪播-------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------內文---------------------------------------- */
+.body_content{
+    /* overflow: hidden; */
+    display: none;
+
+}
+
+
+
+
+/* --------------------------------------------周邊商品------------------------------------------ */
+
+
+
+
+
+/* ----------周邊商品_換圖輪播---------- */
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------分店店家詳細資訊--------------------------------------- */
+/* ---------------goole地址連結 ------------ */
+
+
+
+/* ---------------店家詳細資訊 -------------- */
+
+
+
+
+
+/* -------------------------------------------footer---------------------------------------------- */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
