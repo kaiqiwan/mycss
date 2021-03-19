@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>train火車</title>
+    <style>
+        .overflow-hidden {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.347);
+            width: 100vw;
+            height: 100vh;
+            /* width: 1440px;
+             height: 1000px; */
+        }
+
+        .Yilan {
+            position: relative;
+            /* width: 100%;
+            height: 100%; */
+            width: 100vw;
+            height: 100vh;
+            /* width: 1440px;
+            height: 1000px; */
+            /* margin: 0 auto; */
+            white-space: pre-wrap;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+        }
+
+        /* train火車 */
+        .Yilan .train {
+            position: absolute;
+            display: block;
+            /* width: 50%; */
+            transform: translate(25%, -145px);
+            animation-name: train;
+            animation-duration: 60s;
+            /* display: block; */
+            width: 20%;
+            /* animation: train 2s infinite; */
+
+        }
+
+        /* track軌道 */
+        .Yilan .track {
+            position: absolute;
+            display: block;
+            width: 40%;
+            /* transform: translate(100%, 300%); */
+            animation-name: track;
+            animation-duration: 60s;
+            /* display: block; */
+
+        }
+
+        @keyframes train {
+            0% {
+                /* transform: translate(25%, -145px); */
+                transform: scale(1);
+            }
+
+
+            25% {
+                /* transform: translate(25%, -145px); */
+                transform: scale(1.5);
+
+                /* transform-origin屬性可以設定元素變化的原點 */
+            }
+
+
+            50% {
+                /* transform: translate(25%, -145px); */
+                transform: scale(2);
+            }
+
+
+
+            100% {
+                /* transform: translate(25%, -145px); */
+                transform: scale(2.5);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="overflow-hidden">
+        <!-- Yilan宜蘭 -->
+        <div class="Yilan">
+            <!-- train火車 -->
+            <img class="train" src="./img/2D cafe宜蘭/120ppi/火車66.png" alt="">
+            <!-- track軌道 -->
+            <!-- <div class="margin-auto"> -->
+            <img class="track" src="./img/2D cafe宜蘭/120ppi/火車軌道-66.png" alt="">
+            <!-- </div> -->
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

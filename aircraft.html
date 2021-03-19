@@ -5,12 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aircraft</title>
+    <title>aircraft飛機</title>
     <style>
+        .overflow-hidden {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.347);
+            width: 100vw;
+            height: 100vh;
+            /* width: 1440px;
+            height: 1000px; */
+        }
+
         .Normal-Universit {
             position: relative;
-            width: 100%;
-            height: 100%;
+            /* width: 100%;
+            height: 100%; */
+            width: 100vw;
+            height: 100vh;
+            /* width: 1440px;
+            height: 1000px; */
         }
 
         /* 飛機 */
@@ -20,7 +33,7 @@
             width: 10%;
             transform: translate(150%, 300%);
             animation-name: aircraft;
-            animation-duration: 60s;
+            animation-duration: 100s;
 
         }
 
@@ -31,9 +44,9 @@
             position: absolute;
             display: block;
             width: 10%;
-            transform: translate(50%, 500%);
+            transform: translate(50%, 100%);
             animation-name: cloud1;
-            animation-duration: 30s;
+            animation-duration: 15s;
         }
 
 
@@ -41,10 +54,11 @@
         .Normal-Universit .cloud2 {
             position: absolute;
             display: block;
-            width: 20%;
-            transform: translate(100%, 600%);
+            width: 30%;
+            transform: translate(100%, 300%);
+            /* transform: translateX(400%); */
             animation-name: cloud2;
-            animation-duration: 30s;
+            animation-duration: 15s;
         }
 
 
@@ -54,9 +68,9 @@
             position: absolute;
             display: block;
             width: 15%;
-            transform: translate(600%, 500%);
+            transform: translate(400%, 500%);
             animation-name: cloud3;
-            animation-duration: 30s;
+            animation-duration: 15s;
         }
 
 
@@ -66,9 +80,9 @@
             position: absolute;
             display: block;
             width: 30%;
-            transform: translate(800%, 50%);
+            transform: translate(300%, 50%);
             animation-name: cloud4;
-            animation-duration: 30s;
+            animation-duration: 15s;
         }
 
 
@@ -104,22 +118,28 @@
         @keyframes cloud1 {
             0% {
                 width: 10%;
-                transform: translate(50%, 500%);
+                transform: translate(50%, 100%);
+
             }
+
 
             25% {
-                width: 15%;
-                transform: translate(60%, 400%);
+                width: 5%;
+                /* transform: translate(50%, 100%); */
+                transform: translateX(400%, 500%);
             }
 
+
             50% {
-                width: 5%;
-                transform: translate(40%, 500%);
+                width: 10%;
+                /* transform: translate(50%, 200%); */
+                transform: translate(300%, 100%);
             }
 
             100% {
-                width: 15%;
-                transform: translate(50%, 400%);
+                width: 10%;
+                /* transform: translate(50%, -10%); */
+                transform: translateX(300%, 100%);
             }
 
 
@@ -129,22 +149,28 @@
         @keyframes cloud2 {
             0% {
                 width: 20%;
-                transform: translate(800%, 50%);
+                transform: translate(100%, 300%);
+                /* transform: translateX(400%); */
+
             }
 
             25% {
-                width: 15%;
-                transform: translate(790%, 40%);
+                width: 30%;
+                /* transform: translate(150%, 280%); */
+                transform: translateX(200%, 200%);
             }
 
             50% {
-                width: 5%;
-                transform: translate(-30%, 20%);
+                width: 20%;
+                /* transform: translate(160%, 300%); */
+                transform: translateX(300%, 300%);
             }
 
             100% {
-                width: 15%;
-                transform: translate(10%, -30%);
+                width: 20%;
+                /* transform: translate(170%, 300%); */
+                transform: translateX(300%, 400%);
+                /* transform: translate(200%, 500%); */
             }
 
 
@@ -154,22 +180,24 @@
         @keyframes cloud3 {
             0% {
                 width: 15%;
-                transform: translate(600%, 500%);
+                transform: translate(400%, 500%);
             }
+
 
             25% {
                 width: 15%;
-                transform: translate(10%, -20%);
+                transform: translate(800%, 600%);
             }
 
             50% {
-                width: 5%;
-                transform: translate(30%, 20%);
+                width: 12%;
+                transform: translate(600%, 500%);
             }
 
             100% {
                 width: 15%;
-                transform: translate(-15%, 10%);
+                transform: translate(300%, 500%);
+                overflow: hidden;
             }
 
 
@@ -178,23 +206,24 @@
         /* 雲朵4 */
         @keyframes cloud4 {
             0% {
-                width: 30%;
-                transform: translate(800%, 50%);
+                width: 15%;
+                transform: translate(300%, 50%);
             }
+
 
             25% {
                 width: 15%;
-                transform: translate(10%, 20%);
+                transform: translate(200%, 50%);
             }
 
             50% {
-                width: 5%;
-                transform: translate(-15%, -10%);
+                width: 15%;
+                transform: translate(300%, 50%);
             }
 
             100% {
-                width: 15%;
-                transform: translate(10%, 30%);
+                width: 30%;
+                transform: translate(200%, 50%);
             }
 
 
@@ -205,18 +234,19 @@
 </head>
 
 <body>
-    <!-- Normal University師大店 -->
-    <div class="Normal-Universit">
-        <!-- aircraft飛機 -->
-        <img class="aircraft" src="./img/101店/120ppi/飛機-66.png" alt="">
-        <!-- cloud雲朵 -->
-        <img class="cloud1" src="./img/101店/120ppi/飛機-雲朵-66.png" alt="">
-        <img class="cloud2" src="./img/101店/120ppi/飛機-雲朵-66.png" alt="">
-        <img class="cloud3" src="./img/101店/120ppi/飛機-雲朵-66.png" alt="">
-        <img class="cloud4" src="./img/101店/120ppi/飛機-雲朵-66.png" alt="">
+    <div class="overflow-hidden">
+        <!-- Normal University師大店 -->
+        <div class="Normal-Universit">
+            <!-- aircraft飛機 -->
+            <img class="aircraft" src="./img/101店/120ppi/飛機-66.png" alt="">
+            <!-- cloud雲朵 -->
+            <img class="cloud1" src="./img/101店/120ppi/飛機-雲朵-66.png" alt="">
+            <img class="cloud2" src="./img/101店/120ppi/飛機-雲朵-66.png" alt="">
+            <img class="cloud3" src="./img/101店/120ppi/飛機-雲朵-66.png" alt="">
+            <img class="cloud4" src="./img/101店/120ppi/飛機-雲朵-66.png" alt="">
 
+        </div>
     </div>
-
 
 
 

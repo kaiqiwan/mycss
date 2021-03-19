@@ -19,6 +19,19 @@
 </head>
 
 <body>
+    <div class="overflowHidden">
+        <!-- Normal University師大店 -->
+        <div class="Normal-Universit">
+            <!-- aircraft飛機 -->
+            <img class="aircraft" src="./img/101店/120ppi/飛機-白色.png" alt="">
+            <!-- cloud雲朵 -->
+            <img class="cloud1" src="./img/101店/120ppi/雲-白.png" alt="">
+            <img class="cloud2" src="./img/101店/120ppi/雲-白.png" alt="">
+            <img class="cloud3" src="./img/101店/120ppi/雲-白.png" alt="">
+            <img class="cloud4" src="./img/101店/120ppi/雲-白.png" alt="">
+
+        </div>
+    </div>
     <!-- ---------------header漢堡 ---------------------->
     <!-- input:c#menu_control -->
     <input type="checkbox" name="" id="menu_control">
@@ -1429,24 +1442,39 @@
         $(window).scroll(function () {
             console.log('scrollTop', $(this).scrollTop());
 
+            let windowscrollTop = $(this).scrollTop();
+
+            if (windowscrollTop > 160) {
+                $('body_move').css('animation', "opacity 3s");
+                $('body_move').css('opacity', '1');
+
+            }
+            if (windowscrollTop > 580) {
+                $('.body_menu').css('animation', "opacity2 3s");
+                $('.body_menu').css('opacity2', '1');
+
+            }
+            if (windowscrollTop > 1900) {
+                $('.content-min0').css('animation', "opacity3 3s");
+                $('.content-min0').css('opacity3', '1');
+
+            }
+            if (windowscrollTop > 1980) {
+                $('.content-min01').css('animation', "opacity4 3s");
+                $('.content-min01').css('opacity4', '1');
+
+            }
+
         })
-        let windowscrollTop = $(this).scrollTop();
 
-        if (windowscrollTop > 160) {
-            $('body_move').css('opacity', "1");
-            // $('body_move').css('opacity', '1');
 
-        }
-        if (windowscrollTop > 940) {
-            $('.body_menu').css('animation-name', "opacity2");
-            $('.body_menu').css('opacity2', '1');
 
-        }
-        if (windowscrollTop > 2400) {
-            $('.content-min0').css('animation-name', "opacity3");
-            $('.content-min0').css('opacity3', '1');
+        // 飛機動畫
 
-        }
+        $(document).ready(function () {
+            $(".overflowHidden").fadeOut(5000);
+        });
+
 
 
     </script>

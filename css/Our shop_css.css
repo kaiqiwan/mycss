@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Arial, Helvetica, sans-serif';
+    font-family: '清松手寫體2';
 }
 body {
     /* height: 300vh;
@@ -15,8 +15,10 @@ body {
 } */
 
 @font-face { 	
-    font-family: '清松手寫體2';	
-    src:url(./);
+    font-family:清風手寫體2;
+    src:local('清風手寫體2'),
+    url("./google-font/另外下載字型/JasonHandwriting-master/JasonHandwriting2.ttf");
+    
 } 
 /* --------------------------統一管理共用尺寸-------------------------------- */
 /* -----------------------------手機板-------------------------- */
@@ -176,7 +178,7 @@ p{
 .header {
     height: 6.25rem;
     background-color: #d3d1d1;
-    position: relative;
+    /* position: relative; */
     align-items: center;
     /* justify-content: center; */
     /* width: 100%;
@@ -185,7 +187,7 @@ p{
     /* border: 1px solid red; */
     /* position: fixed; */
     /* display: flex; */
-
+        
         width: 100%;
         position: fixed;
         top: 0px;
@@ -1603,6 +1605,7 @@ footer{
         /* align-items: center; */
         height: 9.375rem;
 
+
     }
 
     .header_logo {
@@ -1645,8 +1648,8 @@ footer{
 }
 .body_move{
     overflow: hidden;   
-    animation-duration: 3s;
-    animation-name:opacity ;
+    /* animation-duration: 3s;
+    animation-name:opacity ; */
 
 
 
@@ -1761,8 +1764,8 @@ footer{
 
 .body_menu{
     overflow: hidden;   
-    animation-duration: 3s;
-    animation-name:opacity2 ;
+    /* animation-duration: 3s;
+    animation-name:opacity2 ; */
 }
 @keyframes opacity2{
     from{
@@ -2034,8 +2037,8 @@ p {
 
 .content-min0{
     overflow: hidden;   
-    animation-duration: 3s;
-    animation-name:opacity3 ;
+    /* animation-duration: 3s;
+    animation-name:opacity3 ; */
 
 
 }
@@ -2117,6 +2120,18 @@ p {
 
 
 /* ------------02--------- */
+.content-min01{
+
+}
+@keyframes opacity4{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
 .pg-min2-1{
     width: 60%;
     
@@ -2924,25 +2939,234 @@ footer{
     font-size: 2rem;
 }
 
+/* --------------------------動畫-桌機板--------------------------- */
+.overflowHidden {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.864);
+    width: 100vw;
+    height: 100vh;
+    /* width: 1440px;
+    height: 1000px; */
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.Normal-Universit {
+    position: relative;
+    /* width: 100%;
+    height: 100%; */
+    width: 100vw;
+    height: 100vh;
+    /* width: 1440px;
+    height: 1000px; */
+}
+
+/* 飛機 */
+.Normal-Universit .aircraft {
+    position: absolute;
+    display: block;
+    width: 10%;
+    transform: translate(150%, 300%);
+    animation-name: aircraft;
+    animation-duration: 60s;
+
+}
 
 
 
+/* 雲朵1 */
+.Normal-Universit .cloud1 {
+    position: absolute;
+    display: block;
+    width: 10%;
+    transform: translate(50%, 100%);
+    animation-name: cloud1;
+    animation-duration: 7s;
+}
+
+
+/* 雲朵2 */
+.Normal-Universit .cloud2 {
+    position: absolute;
+    display: block;
+    width: 30%;
+    transform: translate(100%, 300%);
+    /* transform: translateX(400%); */
+    animation-name: cloud2;
+    animation-duration: 7s;
+}
 
 
 
+/* 雲朵3 */
+.Normal-Universit .cloud3 {
+    position: absolute;
+    display: block;
+    width: 15%;
+    transform: translate(400%, 500%);
+    animation-name: cloud3;
+    animation-duration: 7s;
+    
+}
 
 
 
+/* 雲朵4 */
+.Normal-Universit .cloud4 {
+    position: absolute;
+    display: block;
+    width: 30%;
+    transform: translate(300%, 50%);
+    animation-name: cloud4;
+    animation-duration: 7s;
+}
 
 
 
+/* 飛機 */
+@keyframes aircraft {
+    0% {
+        width: 10%;
+        transform: translate(150%, 300%);
+    }
+
+
+    25% {
+        width: 75%;
+        transform: translate(300%, 500%);
+    }
+
+
+    50% {
+        width: 85%;
+        transform: translate(400%, 700%);
+    }
 
 
 
+    100% {
+        width: 100%;
+        transform: translate(800%, 900%);
+    }
+}
+
+/* 雲朵1 */
+@keyframes cloud1 {
+    0% {
+        width: 10%;
+        transform: translate(50%, 100%);
+
+    }
 
 
+    25% {
+        width: 5%;
+        /* transform: translate(50%, 100%); */
+        transform: translateX(400%, 500%);
+    }
 
 
+    50% {
+        width: 10%;
+        /* transform: translate(50%, 200%); */
+        transform: translate(300%, 100%);
+    }
+
+    100% {
+        width: 10%;
+        /* transform: translate(50%, -10%); */
+        transform: translateX(300%, 100%);
+    }
+
+
+}
+
+/* 雲朵2 */
+@keyframes cloud2 {
+    0% {
+        width: 20%;
+        transform: translate(100%, 300%);
+        /* transform: translateX(400%); */
+
+    }
+
+    25% {
+        width: 30%;
+        /* transform: translate(150%, 280%); */
+        transform: translateX(200%, 200%);
+    }
+
+    50% {
+        width: 20%;
+        /* transform: translate(160%, 300%); */
+        transform: translateX(300%, 300%);
+    }
+
+    100% {
+        width: 20%;
+        /* transform: translate(170%, 300%); */
+        transform: translateX(300%, 400%);
+        /* transform: translate(200%, 500%); */
+    }
+
+
+}
+
+/* 雲朵3 */
+@keyframes cloud3 {
+    0% {
+        width: 15%;
+        transform: translate(400%, 500%);
+    }
+
+
+    25% {
+        width: 15%;
+        transform: translate(800%, 600%);
+    }
+
+    50% {
+        width: 12%;
+        transform: translate(600%, 500%);
+    }
+
+    100% {
+        width: 15%;
+        transform: translate(300%, 500%);
+        overflow: hidden;
+    }
+
+
+}
+
+/* 雲朵4 */
+@keyframes cloud4 {
+    0% {
+        width: 15%;
+        transform: translate(300%, 50%);
+    }
+
+
+    25% {
+        width: 15%;
+        transform: translate(200%, 50%);
+    }
+
+    50% {
+        width: 15%;
+        transform: translate(300%, 50%);
+    }
+
+    100% {
+        width: 30%;
+        transform: translate(200%, 50%);
+    }
+
+
+}
 
 
 }

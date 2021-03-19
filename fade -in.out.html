@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 效果- 淡入淡出(動畫)</title>
+    <style>
+        #div1 {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+        }
+
+        #div2 {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+        }
+
+        #div3 {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+        }
+
+        /* ---------------------------------------------------- */
+
+        #div4 {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            display: none;
+        }
+
+        #div5 {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+            display: none;
+        }
+
+        #div6 {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+            display: none;
+        }
+
+
+        /* --------------------------------------------------------- */
+
+        #div7 {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+        }
+
+        #div8 {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+        }
+
+        #div9 {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+        }
+
+
+        /* --------------------------------------------------------- */
+
+        #div10 {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+        }
+
+        #div11 {
+            width: 80px;
+            height: 80px;
+            background-color: green;
+        }
+
+        #div12 {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h3>[jq如何實現淡入淡出效果]:</h3>
+    <p>演示带有不同参数的 fadeOut() 方法。</p>
+    <button class="01">button</button>
+    <br><br>
+    <div id="div1"></div>
+    <br>
+    <div id="div2"></div>
+    <br>
+    <div id="div3"></div>
+
+
+    <br><br>
+    <p>演示带有不同参数的 fadeIn() 方法。</p>
+    <button class="02">button</button>
+    <br><br>
+    <div id="div4"></div>
+    <br>
+    <div id="div5"></div>
+    <br>
+    <div id="div6"></div>
+
+
+    <p>演示带有不同参数的 fadeToggle() 方法。</p>
+    <button class="03">button要點擊兩次</button>
+    <br><br>
+    <div id="div7"></div>
+    <br>
+    <div id="div8"></div>
+    <br>
+    <div id="div9"></div>
+
+
+    <p>演示带有不同参数的 fadeTo() 方法。</p>
+    <button class="04">button</button>
+    <br><br>
+    <div id="div10"></div>
+    <br>
+    <div id="div11"></div>
+    <br>
+    <div id="div12"></div>
+
+
+    <h3>[js如何實現淡入淡出效果]:</h3>
+    <p>
+        //淡入效果(含淡入到指定透明度) <br>
+        function fadeIn(elem, speed, opacity){<br>
+        /*
+        * 引數說明<br>
+        * elem==>需要淡入的元素<br>
+        * speed==>淡入速度,正整數(可選)<br>
+        * opacity==>淡入到指定的透明度,0~100(可選)<br>
+        */
+        speedspeed = speed || 20;<br>
+        opacityopacity = opacity || 100;<br>
+        //顯示元素,並將元素值為0透明度(不可見)<br>
+        elem.style.display = 'block';<br>
+        iBase.SetOpacity(elem, 0);<br>
+        //初始化透明度變化值為0<br>
+        var val = 0;<br>
+        //迴圈將透明值以5遞增,即淡入效果<br>
+        (function(){<br>
+        iBase.SetOpacity(elem, val);<br>
+        val = 5;<br>
+        if (val <= opacity) { setTimeout(arguments.callee, speed) } })(); } //淡出效果(含淡出到指定透明度) function fadeOut(elem,<br>
+            speed, opacity){ /* * 引數說明 * elem==>需要淡入的元素<br>
+            * speed==>淡入速度,正整數(可選)<br>
+            * opacity==>淡入到指定的透明度,0~100(可選)<br>
+            */
+            speedspeed = speed || 20;<br>
+            opacityopacity = opacity || 0;<br>
+            //初始化透明度變化值為0<br>
+            var val = 100;<br>
+            //迴圈將透明值以5遞減,即淡出效果<br>
+            (function(){<br>
+            iBase.SetOpacity(elem, val);<br>
+            val -= 5;<br>
+            if (val >= opacity) {<br>
+            setTimeout(arguments.callee, speed);<br>
+            }else if (val < 0) { //元素透明度為0後隱藏元素 elem.style.display='none' ; } })(); } </p>
+</body>
+
+
+
+
+
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script>
+    //[点击这里，使三个矩形淡出]
+    $(document).ready(function () {
+        $(".01").click(function () {
+            $("#div1").fadeOut();
+            $("#div2").fadeOut("slow");
+            $("#div3").fadeOut(3000);
+        });
+    });
+
+
+
+    //[点击这里，使三个矩形淡入]
+    $(document).ready(function () {
+        $(".02").click(function () {
+            $("#div4").fadeIn();
+            $("#div5").fadeIn("slow");
+            $("#div6").fadeIn(3000);
+        });
+    });
+
+
+    //[点击这里，使三个矩形淡入淡出]
+    $(document).ready(function () {
+        $(".03").click(function () {
+            $("#div7").fadeToggle();
+            $("#div8").fadeToggle("slow");
+            $("#div9").fadeToggle(3000);
+        });
+    });
+
+    //点击这里，使三个矩形淡出(淡出程度深淺不同)
+    $(document).ready(function () {
+        $(".04").click(function () {
+            $("#div10").fadeTo("slow", 0.15);
+            $("#div11").fadeTo("slow", 0.4);
+            $("#div12").fadeTo("slow", 0.7);
+        });
+    });
+
+    // $('selector選擇器').fadeOut(speed速度,easing可選規定在動畫的不同點上元素的速度呈現方式,callback);
+    // $(document).ready(function () {
+    //     $(".04").click(function () {
+    //         $("#div10").fadeOut(3000, swing);
+    //         $("#div11").fadeTo("slow", 0.4);
+    //         $("#div12").fadeTo("slow", 0.7);
+    //     });
+    // });
+
+
+</script>
+</body>
+
+</html>
