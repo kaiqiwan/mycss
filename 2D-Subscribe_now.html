@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D-Subscribe now</title><!-- 立即訂位 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/Subscribe_now-css.css">
+
+</head>
+
+<body>
+    <!-- ---------------header漢堡 ---------------------->
+    <!-- input:c#menu_control -->
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header">
+        <h1 class="header_logo">
+            <a href="./2D-cafe_home.html"><img src="./img/button/2D-logo.png" alt=""></a>
+        </h1>
+
+
+        <!-- 漢堡 -->
+        <!-- label可從遠端去遙控input要不要打勾 -->
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <!-- label跟表單有關係 -->
+
+        <!-- nav導覽列 -->
+        <div class="nav_banner">
+            <nav>
+                <!-- a[#]{link}*6 -->
+                <a href="./about.html"><img class="header_btn1" src="./img/button/about-button.png" alt=""></a>
+                <a href="./2D_news.html"><img class="header_btn1" src="./img/button/最新消息-鈴鐺@100x.png" alt=""></a>
+                <!-- <a href="#"><img class="header_btn1" src="./img/button/分店資訊-button.png" alt=""></a> -->
+                <a href="./2D-menu.html"><img class="header_btn1" src="./img/button/MENU--button.png" alt=""></a>
+                <a href="./2D-Merchandise.html"><img class="header_btn1" src="./img/button/周邊商品-button.png" alt=""></a>
+                <a href="./2D-Subscribe_now.html"><img class="header_btn1" src="./img/button/立即訂位-鉛筆@100x.png"
+                        alt=""></a>
+                <a href="https://www.instagram.com/2d.taipei/"><img class="header_btn2" src="./img/button/IG.png"
+                        alt=""></a>
+                <a href="https://www.facebook.com/2D-Cafe-%E5%B8%AB%E5%A4%A7-118115506713222"><img class="header_btn2"
+                        src="./img/button/FB.png" alt=""></a>
+            </nav>
+        </div>
+    </div>
+    <!-- --------------------------------2D-立即訂位------------------------------------ -->
+    <div class="sub_cont">
+        <div class="Subscribe2d-body">
+            <div class="Subscribe-logo">
+                <img src="./img/SVG/立即定位.svg" alt="">
+            </div>
+        </div>
+        <form class="form-signin">
+            <table id="tds">
+                <tbody>
+                    <tr>
+                        <td class="td1">姓名</td>
+                        <td class="td2"><input maxlength="18" placeholder="請輸入姓名"></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">電子信箱</td>
+                        <td class="td2"><input placeholder="請輸入電子信箱"></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">電話</td>
+                        <td class="td2"><input placeholder="請輸入電話"></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">預訂位的分店</td>
+
+                        <td class="td2">
+                            <select name="light_type" class="Branch" id="select-1" required>
+                                <option selected value="">選擇分店</option>
+                                <option value="台北師大店（日本生活主題）">台北師大店（日本生活主題）</option>
+                                <option value="台北101店（飛機主題）">台北101店（飛機主題）</option>
+                                <option value="高雄店（賽車超跑主題）">高雄店（賽車超跑主題）</option>
+                                <option value="台中店（遊樂園主題）">台中店（遊樂園主題）</option>
+                                <option value="新莊店（歐風主題）">新莊店（歐風主題）</option>
+                                <option value="宜蘭店（火車和溫泉主題）">宜蘭店（火車和溫泉主題）</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">用餐人數</td>
+                        <td class="td2">
+                            <form id='myform' method='POST' action='#'>
+                                <label for="" class="inpt">
+                                    <input type='button' value='-' class='qtyminus' field='quantity' />
+
+                                    <input type='text' name='quantity' value='0' class='qty' />
+
+                                    <input type='button' value='+' class='qtyplus' field='quantity' />
+                                </label>
+                            </form>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td class="td1">預約日期</td>
+                        <td class="td2"><input type="date" value="2020-04-20" min="2020-04-01" max="2022-04-30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">訂位時間</td>
+                        <td class="td2"><input type="time" value="10:00" min="10:00" max="20:00" step="5"></td>
+                    </tr>
+                    <tr class="confirm_btn">
+
+                        <td colspan="2" class="btn_td"><button>確認定位</button></td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </form>
+        <!-- <div class="container ">
+            <div class="row tab_cont">
+
+            </div>
+
+        </div> -->
+    </div>
+    <!-- -------------------------------------------------footer--------------------------------------------------- -->
+    <footer>
+        <h6 class="footer_h6">2020©2D Cafe_丰品貿易有限公司</h6>
+        <div class="footer-fb_btn"></div>
+        <div class="footer-ig_ntn"></div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            // This button will increment the value
+            $('.qtyplus').click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                fieldName = $(this).attr('field');
+                // Get its current value
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                // If is not undefined
+                if (!isNaN(currentVal)) {
+                    // Increment
+                    $('input[name=' + fieldName + ']').val(currentVal + 1);
+                } else {
+                    // Otherwise put a 0 there
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+            // This button will decrement the value till 0
+            $(".qtyminus").click(function (e) {
+                // Stop acting like a button
+                e.preventDefault();
+                // Get the field name
+                fieldName = $(this).attr('field');
+                // Get its current value
+                var currentVal = parseInt($('input[name=' + fieldName + ']').val());
+                // If it isn't undefined or its greater than 0
+                if (!isNaN(currentVal) && currentVal > 0) {
+                    // Decrement one
+                    $('input[name=' + fieldName + ']').val(currentVal - 1);
+                } else {
+                    // Otherwise put a 0 there
+                    $('input[name=' + fieldName + ']').val(0);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

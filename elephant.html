@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小象動畫-台中</title>
+    <style>
+        .overflow-h {
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .position-r {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .elephant {
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translateX(-50%);
+        }
+
+        /* 臉 */
+        .elephant-face01 {
+            /* position: absolute; */
+            width: 150px;
+
+        }
+
+        /* 鼻子 */
+        .nose-ball {
+            position: absolute;
+            /* display: flex;
+            justify-content: center; */
+            width: 20px;
+            height: 31px;
+            top: 55px;
+            left: 62px;
+
+        }
+
+        .nose-ball01 {
+            position: absolute;
+            /* display: flex;
+            justify-content: center; */
+            width: 20px;
+            height: 31px;
+            top: 55px;
+            left: 62px;
+
+        }
+
+        .nose-ball02 {
+            position: absolute;
+            /* display: flex;
+            justify-content: center; */
+            width: 20px;
+            height: 31px;
+            top: 55px;
+            left: 62px;
+
+        }
+
+        /* 眼睛 */
+        .eye01 {
+            position: absolute;
+            width: 45px;
+            top: 50px;
+            left: 50px;
+        }
+
+        .eye02 {
+            position: absolute;
+            width: 45px;
+            top: 50px;
+            left: 50px;
+        }
+
+        .eye03 {
+            position: absolute;
+            width: 45px;
+            top: 50px;
+            left: 50px;
+        }
+
+        /* 眉毛 */
+        .eyebrow {
+            position: absolute;
+            width: 40px;
+            top: 42px;
+            left: 53px;
+        }
+
+        /* 氣球 */
+        .balloon_body {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            z-index: -5;
+        }
+
+        .balloon {
+            width: 40px;
+        }
+
+        .balloon img {
+            width: 100%;
+        }
+
+        .balloon01 {
+            position: absolute;
+            transform: translate(100%, 50%);
+            animation-name: balloon01;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes balloon01 {
+            0% {
+                transform: translate(100%, 50%);
+
+            }
+
+            20% {
+                transform: translate(160%, 100%);
+                /* transform-origin屬性可以設定元素變化的原點 */
+            }
+
+            40% {
+                transform: translate(200%, 50%);
+            }
+
+            60% {
+                transform: translate(150%, 100%);
+            }
+
+            80% {
+                transform: translate(100%, 50%);
+            }
+
+            100% {
+                transform: translate(200%, 150%);
+            }
+        }
+
+        .balloon02 {
+            position: absolute;
+            transform: translate(300%, 100%);
+            animation-name: balloon02;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes balloon02 {
+            0% {
+                transform: translate(300%, 100%);
+
+            }
+
+            20% {
+                transform: translate(340%, 90%);
+                /* transform-origin屬性可以設定元素變化的原點 */
+            }
+
+            40% {
+                transform: translate(380%, 110%);
+            }
+
+            60% {
+                transform: translate(400%, 90%);
+            }
+
+            80% {
+                transform: translate(420%, 100%);
+            }
+
+            100% {
+                transform: translate(380%, 80%);
+            }
+        }
+
+        .balloon03 {
+            position: absolute;
+            transform: translate(500%, 300%);
+            animation-name: balloon03;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes balloon03 {
+            0% {
+                transform: translate(500%, 300%);
+
+            }
+
+            20% {
+                transform: translate(520%, 280%);
+                /* transform-origin屬性可以設定元素變化的原點 */
+            }
+
+            40% {
+                transform: translate(540%, 310%);
+            }
+
+            60% {
+                transform: translate(560%, 270%);
+            }
+
+            80% {
+                transform: translate(540%, 300%);
+            }
+
+            100% {
+                transform: translate(570%, 320%);
+            }
+        }
+
+        .balloon04 {
+            position: absolute;
+            transform: translate(800%, 200%);
+            animation-name: balloon04;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes balloon04 {
+            0% {
+                transform: translate(800%, 200%);
+
+            }
+
+            20% {
+                transform: translate(900%, 160%);
+                /* transform-origin屬性可以設定元素變化的原點 */
+            }
+
+            40% {
+                transform: translate(1000%, 200%);
+            }
+
+            60% {
+                transform: translate(1200%, 180%);
+            }
+
+            80% {
+                transform: translate(1300%, 200%);
+            }
+
+            100% {
+                transform: translate(1000%, 170%);
+            }
+        }
+
+        .balloon05 {
+            position: absolute;
+            transform: translate(1200%, 150%);
+            animation-name: balloon05;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        /* ---------------------------- */
+        .balloon06 {
+            position: absolute;
+            transform: translate(500%, 20%);
+            animation-name: balloon06;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        .balloon07 {
+            position: absolute;
+            transform: translate(200%, 500%);
+            animation-name: balloon07;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        .balloon08 {
+            position: absolute;
+            transform: translate(600%, 100%);
+            animation-name: balloon08;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        .balloon09 {
+            position: absolute;
+            transform: translate(1500%, 300%);
+            animation-name: balloon09;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        .balloon10 {
+            position: absolute;
+            transform: translate(1800%, 300%);
+            animation-name: balloon10;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        /* -------------------------------------- */
+        .balloon11 {
+            position: absolute;
+            transform: translate(2200%, 0%);
+            animation-name: balloon11;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        .balloon12 {
+            position: absolute;
+            transform: translate(2000%, 500%);
+            animation-name: balloon12;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        .balloon13 {
+            position: absolute;
+            transform: translate(1900%, 300%);
+            animation-name: balloon13;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        .balloon14 {
+            position: absolute;
+            transform: translate(2400%, 500%);
+            animation-name: balloon14;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        .balloon15 {
+            position: absolute;
+            transform: translate(2500%, 400%);
+            animation-name: balloon15;
+            animation-duration: 1s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        /* 彩帶 */
+        .Ribbons img {
+            width: 100%;
+
+        }
+
+        .Ribbons {
+            position: absolute;
+            display: block;
+            width: 60%;
+            right: 0;
+            top: -35px;
+            z-index: -50;
+            transform: translate(0%, 0%);
+            animation-name: Ribbons;
+            animation-duration: 1s;
+            /* animation-iteration-count:infinite; 無限次播放*/
+            /* display: block; */
+
+        }
+
+        @keyframes Ribbons {
+            0% {
+                transform: translate(0%, 0%);
+
+            }
+
+
+            20% {
+                transform: translate(0%, 10%);
+                /* transform-origin屬性可以設定元素變化的原點 */
+            }
+
+
+            40% {
+                transform: translate(0%, 0%);
+            }
+
+
+
+            60% {
+                transform: translate(0%, 10%);
+            }
+
+            80% {
+                transform: translate(0%, 0%);
+            }
+
+
+
+            100% {
+                transform: translate(0%, 10%);
+            }
+        }
+
+        /* 小象-旋轉球 */
+        .ball {
+            position: absolute;
+            width: 50px;
+            transform: translate(-60%, 0%);
+            z-index: 2;
+            left: 50%;
+            top: 0px;
+            animation-name: ball;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            /* animation-iteration-count:infinite; 無限次播放*/
+            /* display: block; */
+        }
+
+        .ball img {
+            width: 100%;
+        }
+
+        .ball02 {
+            position: absolute;
+            width: 50px;
+            transform: translate(0%, 0%);
+            left: 30%;
+            top: 10px;
+            animation-name: ball02;
+            animation-duration: 0.25s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            /* animation-iteration-count:infinite; 無限次播放 */
+            /* display: block; */
+            visibility: hidden;
+            animation-fill-mode: forwards;
+        }
+
+        .ball02 img {
+            width: 100%;
+        }
+
+        @keyframes ball {
+            0% {
+
+                transform: translate(-60%, 0%);
+
+            }
+
+            100% {
+
+                transform: translate(-60%, 1400%);
+
+            }
+        }
+
+        @keyframes ball02 {
+            0% {
+                transform: translate(0%, 0%)rotate(0deg);
+
+            }
+
+            /* 40% {
+                transform: translate(0%, 0%)rotate(180deg);
+            } */
+
+
+
+            100% {
+                transform: translate(0%, 0%)rotate(360deg);
+            }
+
+            100% {
+                /* transform: translate(-50%, 1200%) rotate(360deg); */
+            }
+        }
+
+        .Blush_body {
+            position: absolute;
+        }
+
+        .Blush {
+            
+            width: 10px;
+
+        }
+
+        .Blush img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overflow-h">
+        <div class="position-r">
+            <!-- 彩帶 -->
+            <div class="Ribbons">
+                <img src="./img/2D cafe台中/120ppi/彩帶彈跳1.png" alt="">
+            </div>
+            <!-- 小象-旋轉球  -->
+            <div class="ball" id="ball">
+                <img src="./img/2D cafe台中/120ppi/小象球-白底@120x.png" alt="">
+            </div>
+
+            <div class="elephant">
+                <!-- 小象-臉 -->
+                <div class="face_body">
+                    <img class="elephant-face01" src="./img/2D cafe台中/120ppi/小象-臉-1.png" alt="">
+                </div>
+                <!-- 小象球-鼻子 -->
+                <div class="nose_body">
+                    <!-- <img class="nose-ball" src="./img/2D cafe台中/120ppi/小象-眼睛擺動-鼻子1.png" alt=""> -->
+                    <img class="nose-ball01" src="./img/2D cafe台中/120ppi/小象-球-鼻子1.png" alt="">
+                    <!-- <img class="nose-ball02" src="./img/2D cafe台中/120ppi/小象-球-鼻子2.png" alt=""> -->
+                </div>
+                <!-- 小象球-眼睛 -->
+                <div class="eye_body">
+                    <img class="eye01" src="./img/2D cafe台中/120ppi/小象-眼睛擺動-正視圖.png" alt="">
+                    <!-- <img class="eye02" src="./img/2D cafe台中/120ppi/小象-眼睛擺動-往右移.png" alt=""> -->
+                    <!-- <img class="eye03" src="./img/2D cafe台中/120ppi/小象-眼睛擺動-往左移.png" alt=""> -->
+                </div>
+                <!-- 小象-眉毛  -->
+                <div class="eyebrow_body">
+                    <img class="eyebrow" src="./img/2D cafe台中/120ppi/眉毛2.png" alt="">
+                </div>
+                <!-- 小象-腮紅  -->
+                <div class="Blush_body">
+                    <div class="Blush">
+                        <img src="./img/2D cafe台中/120ppi/小象-腮紅-1.png" alt="">
+                    </div>
+                    <div class="Blush">
+                        <img src="./img/2D cafe台中/120ppi/小象-腮紅-2.png" alt="">
+                    </div>
+                </div>
+                <!-- 小象-旋轉球  -->
+                <div class="ball02" id="ball02">
+                    <img src="./img/2D cafe台中/120ppi/小象球-白底@120x.png" alt="">
+                </div>
+            </div>
+            <!-- 氣球 -->
+            <div class="balloon_body">
+                <div class="balloon balloon01">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球1-1.png" alt="">
+                </div>
+                <div class="balloon balloon02">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球2-1.png" alt="">
+                </div>
+                <div class="balloon balloon03">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球3-1.png" alt="">
+                </div>
+                <div class="balloon balloon04">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球4-1.png" alt="">
+                </div>
+                <div class="balloon balloon05">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球5-1.png" alt="">
+                </div>
+                <!-- ------------------------------------- -->
+                <div class="balloon balloon06">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球1-1.png" alt="">
+                </div>
+                <div class="balloon balloon07">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球2-1.png" alt="">
+                </div>
+                <div class="balloon balloon08">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球3-1.png" alt="">
+                </div>
+                <div class="balloon balloon09">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球4-1.png" alt="">
+                </div>
+                <div class="balloon balloon10">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球5-1.png" alt="">
+                </div>
+                <!-- ---------------------------------------------- -->
+                <div class="balloon balloon11">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球1-1.png" alt="">
+                </div>
+                <div class="balloon balloon12">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球2-1.png" alt="">
+                </div>
+                <div class="balloon balloon13">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球3-1.png" alt="">
+                </div>
+                <div class="balloon balloon14">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球4-1.png" alt="">
+                </div>
+                <div class="balloon balloon15">
+                    <img src="./img/2D cafe台中/120ppi/小象-氣球5-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script>
+        document.getElementById('ball').addEventListener('animationend', function () {
+            // $("#ball").fadeOut(300);
+            $('#ball').css('animation-duration', '0.5s').css('display', 'none');
+            // $('#ball').css('visibility', 'visible');
+            $('#ball02').css('visibility', 'visible');
+
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

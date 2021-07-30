@@ -144,8 +144,8 @@ nav a {
     right: 0;
 }
 .nav_banner nav .header_btn1{
-    width: 10.4375rem;
-    height: 2.6625rem;
+    width: 8rem;
+    height: 2rem;
 }
 .nav_banner nav .header_btn2{
     width: 2.0625rem;
@@ -170,9 +170,7 @@ nav a {
 .container{
     overflow: hidden;
 }
-.row{
-    transform: translateX(52.5px);
-}
+
 
 
 
@@ -185,7 +183,6 @@ nav a {
 
 /* ---------------------------------------------2D-about-手機板-------------------------------------------- */
 .about2d-body{
- 
     margin-top: 8rem;
     margin-bottom: 1rem;
 }
@@ -194,9 +191,7 @@ nav a {
     margin: 0 auto;
 }
 
-.row{
-    flex-direction:column;
-}
+
 .pg1{
     width: 70%;
 }
@@ -206,27 +201,46 @@ nav a {
 }
 .pg2{
     width: 70%;
-    /* height: 200px; */
     margin: 20px 20px;
     
     
 }
 
 .align-end{
-    /* align-content:flex-end; */
     text-align: justify;
     text-justify: inter-ideograph;
-    /* vertical-align:text-bottom; */
-    transform: translateX(-20px);
+    
 }
-h4{
-    font-size: 2rem;
-}
-h8{
+h6{
     font-size: 1.3rem;
     font-weight: 550;
     
 }
+h4{
+    font-size: 2rem;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* --------------------footer------------------- */
+footer{
+    /* margin: 0 auto; */
+    /* justify-content:center; */
+    /* text-align: justify; */
+    background-color: #d3d1d1;
+    height: 5rem;
+   
+    
+    
+}
+.footer_h6{
+    text-align:center;
+    line-height: 4rem;
+}
+
 
 
 
@@ -255,8 +269,12 @@ h8{
         /* line-height: 6rem; */
         margin: 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
     }
-   
+
 
     /* 文字固定在DIV寬度左右對齊 */
     .text-justify{
@@ -285,7 +303,7 @@ h8{
         justify-content: space-between;
         background-color:#d3d1d1;
         /* align-items: center; */
-        height: 9.375rem;
+        height: 7rem;
 
     }
 
@@ -300,7 +318,7 @@ h8{
         /* flex-direction: column; */
         /* justify-content:space-around ; */
         /* align-items: center; */
-        padding-top: 2.5rem;
+        padding-top: 1.5rem;
         width: 70%;
         height: auto;
         top: 0;
@@ -325,46 +343,63 @@ h8{
 
     /* ---------------------------------------------2D-about-桌機板-------------------------------------------- */
     .about2d-body{
- 
-        margin-top: 15rem;
-        margin-bottom: 5rem;
+        margin-top: 10.5rem;
+        margin-bottom: 2.5rem;
     }
     .about-logo{
-        width: 30%;
+        width: 25%;
         margin: 0 auto;
     }
     .row{
+        display:flex;
         flex-direction:row;
+        align-items:center;
+        justify-content:center;
     }
     
     .pg1{
-        width: 45%;
+        width: 30%;
     }
     .pg1 img{
         border: 5px solid #000;
         width: 100%;
     }
     .pg2{
-        width: 40%;
-        margin: 20px 20px;
+        width: 45%;
+        padding: 20px 20px;
         
         
     }
  
     .align-end{
-        /* align-content:flex-end; */
         text-align: justify;
         text-justify: inter-ideograph;
-        /* vertical-align:text-bottom; */
-        transform: translateY(120px);
+
     }
     h4{
-        font-size: 3.5rem;
-    }
-    h8{
         font-size: 2.5rem;
     }
+    h6{
+        font-size: 1.5rem;
+    }
+    .txt_p{
+        font-size: 1.3rem;
+    }
+    /* -------------------------------------------footer---------------------------------------------- */
 
+    footer{
+        background-color: #d3d1d1;
+        height: 4rem; 
+        width: 100%;
+      
+    }
+    .footer_h6{
+        
+        text-align:center;
+        line-height: 4rem;
+        font-size: 1.5rem;
+    
+    }
 
 
 

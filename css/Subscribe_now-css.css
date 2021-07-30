@@ -1,0 +1,573 @@
+
+
+
+
+
+
+
+
+/* --------------------------------漢堡header選單-手機板------------------------------------- */
+
+
+.header {
+    height: 6.25rem;
+    background-color: #d3d1d1;
+    position: relative;
+    align-items: center;
+    /* justify-content: center; */
+    /* width: 100%;
+    display: flex;
+    justify-content: center; */
+    /* border: 1px solid red; */
+    /* position: fixed; */
+    /* display: flex; */
+
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        z-index: 500;
+}
+
+#menu_control {
+    position: absolute;
+    z-index: -2;
+    opacity: 0;
+}
+
+.header .header_logo {
+    width: 6rem;
+    /* height: 5rem; */
+    /* margin-left: 10px; */
+    position: absolute;
+    /* left: 10px; */
+    padding: 10px 10px;
+    /* transform: translateY(-50%); */
+  
+}
+
+.header_logo a {
+    display: block;
+    /* height: 5rem; */
+    width: 6rem;
+}
+
+.header .header_logo img {
+    vertical-align: top;
+    /* middle將元素的中間與基線對齊，再加上父對象的x高度的一半。 */
+    align-items: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(2px 2px 2px rgb(71, 71, 71));
+}
+
+.menu_btn {
+    width: 6rem;
+    height: 5rem;
+    background-color: #d3d1d1;
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    /* z-index: 999; */
+}
+
+.menu_btn span {
+    opacity: 0;
+    /* opacity屬性指定了一個元素的不透明度 */
+    width: 1px;
+    height: 1px;
+    display: block;
+    overflow: hidden;
+    /* overflow:hidden; //自動隱藏超出的文字或圖片 */
+}
+
+/* 漢堡選單的三條線box-shadow製作 */
+.menu_btn::before {
+    /* ::before 會在物件內容的前方加入資料 */
+    content: "";
+    /* content和"::before"/"::after"是一組的 */
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    right: 2px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0px 8px 0px #000, 0px -8px 0px #000;
+    /* box-shadow 區塊陰影 */
+    /* box-shadow:x軸,y軸,模糊,色彩 */
+    /* z-index: 800; */
+}
+
+.nav_banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    /* width: 40%; */
+
+}
+
+nav {
+    /* display: none; */
+    width: 80%;
+    height: calc(100vh-50px);
+    /* calc()算術運算式,可加減乘除 */
+    /* calc(100vh-50px) */
+    /* 100vh視窗高度 */
+    background-color:#d3d1d1;
+    position: absolute;
+    top: 6.25rem;
+    /* right: 0; */
+    right: -100%;
+    transition: .5s;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    z-index: 200;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    /* text-decoration文字修飾 */
+    color: #000;
+    padding: 10px 20px;
+    border-bottom: 1px solid #000;
+    filter: drop-shadow(1px 1px 1px rgb(36, 35, 35));
+
+}
+
+#menu_control:checked~.header nav {
+    right: 0;
+}
+.nav_banner nav .header_btn1{
+    width: 8rem;
+    height: 2rem;
+}
+.nav_banner nav .header_btn2{
+    width: 2.0625rem;
+    height: 2.0625rem;
+}
+.nav_banner img{
+    filter: drop-shadow(3px 3px 3px rgb(71, 71, 71));
+}
+ /* ---------------------------------------------2D-about-手機板-------------------------------------------- */
+ @media  screen and (max-width:768px){
+body{
+    font-size: 1rem;
+    /* line-height: 6rem; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.Subscribe2d-body{
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+}
+.Subscribe-logo{
+    width: 70%;
+    margin: 0 auto;
+}
+.form-signin {
+    width: 100%;
+    max-width: 370px;
+    padding: 15px;
+    margin: 0 auto;
+}
+ .menu2d-body{
+ 
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+.menu-logo{
+    width: 50%;
+    margin: 0 auto;
+}
+.menu-logo img{
+    width: 100%;
+}
+.container{
+    overflow: hidden;
+}
+.row{
+    transform: translateX(52.5px);
+}
+
+
+
+
+
+
+.img_2D img{
+    border: 5px solid #000;
+}
+
+/* ---------------------------------------------2D-about-手機板-------------------------------------------- */
+.about2d-body{
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+.about-logo{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.row{
+    flex-direction:column;
+}
+
+
+.align-end{
+    text-align: justify;
+    text-justify: inter-ideograph;
+    transform: translateX(-20px);
+}
+h6{
+    font-size: 1.3rem;
+    font-weight: 550;
+    
+}
+h4{
+    font-size: 2rem;
+}
+ /* -------------計數器-手機--------------- */
+ .qty {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #aaa;
+    width: 160px;
+}
+  
+  
+input.qtyplus {
+    width: 25px;
+    height: 35px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+}
+  
+input.qtyminus {
+    width: 25px;
+    height: 35px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+}
+ /* ------------ */
+ tr td{
+    padding: 15px 5px;
+}
+
+.td1{
+    width: 110px;
+}
+.td2{
+    width: 220px;
+}
+input{
+    width: 220px;
+}
+select{
+    width: 220px;
+}
+input{
+    caret-color: #aaa; 
+    outline: none; 
+} 
+.confirm_btn{
+    text-align: center;
+    
+}
+#tds{
+    margin-bottom: 25px;
+}
+.Branch{
+    height: 30px;
+}
+.inpt input{
+    height: 30px;
+
+}
+label{
+    margin: 0;
+}
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #000;
+    border-radius:5px;
+    width: 100%;
+    height: 40px; 
+}
+/* --------------------footer------------------- */
+footer{
+    /* margin: 0 auto; */
+    /* justify-content:center; */
+    /* text-align: justify; */
+    background-color: #d3d1d1;
+    height: 5rem;
+   
+    
+    
+}
+.footer_h6{
+    text-align:center;
+    line-height: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* --------------------------------------------------------桌機板--------------------------------------------- */
+
+
+/* ---------------------漢堡header選單-桌機板--------------------------- */
+@media screen and (min-width:768px) {
+    .form-signin {
+        width: 100%;
+        max-width: 420px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    body{
+        font-size: 1.2rem;
+        /* line-height: 6rem; */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+ 
+    .row{
+        margin: 0;
+    }
+
+    /* 文字固定在DIV寬度左右對齊 */
+    .text-justify{
+    line-height: 4rem;
+    }
+    .body_content-move,
+    .body_content,
+    .container_menu{
+        padding: 3.75rem 3.75rem;
+    }
+
+    .container_menu{
+        padding: 0rem 3.75rem;
+    }
+    .map_body{
+        padding: 3.75rem 3.75rem 0rem 3.75rem;
+    }
+    /* ---------------header漢堡-桌機板 --------------------- */
+    .menu_btn {
+        display: none;
+    }
+
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color:#d3d1d1;
+        /* align-items: center; */
+        height: 7rem;
+
+    }
+
+    .header_logo {
+        /* align-items: center; */
+    }
+
+    nav {
+        /* position: relative; */
+        right: 130px;
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content:space-around ; */
+        /* align-items: center; */
+        padding-top: 1.5rem;
+        width: 70%;
+        height: auto;
+        top: 0;
+        background: transparent;
+
+        /* 設定在桌機機的時候"導覽列"背景是透明的 */
+        
+    }
+
+    nav a {
+        border-bottom: none;
+        padding-left: 5px;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .nav_banner img{
+        /* width: 200vw;
+        height: 100vh; */
+       
+        
+    }
+
+    /* ---------------------------------------------2D-about-桌機板-------------------------------------------- */
+    .Subscribe2d-body{
+        margin-top: 10.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .Subscribe-logo{
+        width: 15%;
+        margin: 0 auto;
+    }
+    .row{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    
+
+ 
+    .align-end{
+        text-align: justify;
+        text-justify: inter-ideograph;
+
+    }
+    h4{
+        font-size: 2.5rem;
+    }
+    h6{
+        font-size: 1.5rem;
+    }
+    .txt_p{
+        font-size: 1.3rem;
+    }
+    /* -------------計數器---------------- */
+    .qty {
+        width: 40px;
+        height: 35px;
+        text-align: center;
+        border: 1px solid #aaa;
+        width: 189px;
+    }
+      
+      
+    input.qtyplus {
+        width: 25px;
+        height: 35px;
+        border: 1px solid #aaa;
+        background: #f8f8f8;
+    }
+      
+    input.qtyminus {
+        width: 25px;
+        height: 35px;
+        border: 1px solid #aaa;
+        background: #f8f8f8;
+    }
+
+      /* ------------ */
+    tr td{
+        padding: 15px 5px;
+    }
+    
+    .td1{
+        width: 130px;
+    }
+    .td2{
+        width: 250px;
+    }
+    input{
+        width: 250px;
+    }
+    select{
+        width: 250px;
+    }
+    input{
+        caret-color: #aaa; /* 指定色 */
+        outline: none; /* 外框效果 */
+    } 
+    .confirm_btn{
+        text-align: center;
+        
+    }
+    #tds{
+        margin-bottom: 50px;
+    }
+    .Branch{
+        height: 30px;
+    }
+    .inpt input{
+        height: 30px;
+    }
+    label{
+        margin: 0;
+    }
+    button {
+        background-color: white;
+        color: black;
+        border: 2px solid #000;
+        border-radius:5px;
+        width: 100%;
+        height: 40px; 
+    }
+    /* -------------------------------------------footer---------------------------------------------- */
+
+    footer{
+        background-color: #d3d1d1;
+        height: 4rem; 
+        width: 100%;
+      
+    }
+    .footer_h6{
+        
+        text-align:center;
+        line-height: 4rem;
+        font-size: 1.5rem;
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
