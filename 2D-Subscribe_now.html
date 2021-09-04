@@ -52,7 +52,7 @@
     <div class="sub_cont">
         <div class="Subscribe2d-body">
             <div class="Subscribe-logo">
-                <img src="./img/SVG/立即定位.svg" alt="">
+                <img src="./img/SVG/立即訂位.svg" alt="">
             </div>
         </div>
         <form class="form-signin">
@@ -60,15 +60,15 @@
                 <tbody>
                     <tr>
                         <td class="td1">姓名</td>
-                        <td class="td2"><input maxlength="18" placeholder="請輸入姓名"></td>
+                        <td class="td2"><input name="ToName" maxlength="18" placeholder="請輸入姓名"></td>
                     </tr>
                     <tr>
                         <td class="td1">電子信箱</td>
-                        <td class="td2"><input placeholder="請輸入電子信箱"></td>
+                        <td class="td2"><input name="ToMail" placeholder="請輸入電子信箱"></td>
                     </tr>
                     <tr>
                         <td class="td1">電話</td>
-                        <td class="td2"><input placeholder="請輸入電話"></td>
+                        <td class="td2"><input name="Phone" placeholder="請輸入電話"></td>
                     </tr>
                     <tr>
                         <td class="td1">預訂位的分店</td>
@@ -88,42 +88,40 @@
                     <tr>
                         <td class="td1">用餐人數</td>
                         <td class="td2">
-                            <form id='myform' method='POST' action='#'>
-                                <label for="" class="inpt">
-                                    <input type='button' value='-' class='qtyminus' field='quantity' />
 
-                                    <input type='text' name='quantity' value='0' class='qty' />
+                            <label for="" class="inpt">
+                                <input type='button' value='-' class='qtyminus' field='quantity' />
 
-                                    <input type='button' value='+' class='qtyplus' field='quantity' />
-                                </label>
-                            </form>
+                                <input type='text' name='quantity' value='0' class='qty' />
+
+                                <input type='button' value='+' class='qtyplus' field='quantity' />
+                            </label>
                         </td>
 
                     </tr>
                     <tr>
                         <td class="td1">預約日期</td>
-                        <td class="td2"><input type="date" value="2020-04-20" min="2020-04-01" max="2022-04-30">
+                        <td class="td2"><input name="date" type="date" value="2020-04-20" min="2020-04-01"
+                                max="2022-04-30">
                         </td>
                     </tr>
                     <tr>
                         <td class="td1">訂位時間</td>
-                        <td class="td2"><input type="time" value="10:00" min="10:00" max="20:00" step="5"></td>
+                        <td class="td2"><input name="time" type="time" value="10:00" min="10:00" max="20:00" step="5">
+                        </td>
                     </tr>
                     <tr class="confirm_btn">
 
-                        <td colspan="2" class="btn_td"><button>確認定位</button></td>
+                        <td colspan="2" class="btn_td">
+                            <button type="button" id="mybtn">確認訂位</button>
+                        </td>
 
                     </tr>
 
                 </tbody>
             </table>
         </form>
-        <!-- <div class="container ">
-            <div class="row tab_cont">
 
-            </div>
-
-        </div> -->
     </div>
     <!-- -------------------------------------------------footer--------------------------------------------------- -->
     <footer>
@@ -131,15 +129,6 @@
         <div class="footer-fb_btn"></div>
         <div class="footer-ig_ntn"></div>
     </footer>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -154,6 +143,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(function () {
             // This button will increment the value
@@ -191,6 +181,33 @@
                 }
             });
         });
+        $("#mybtn").on("click", function () {
+            var date = $('[name=date]').val();
+            var time = $('[name=time]').val();
+            var data = {
+                "ToMail": $('[name=ToMail]').val(),
+                "ToName": $('[name=ToName]').val(),
+                "Phone": $('[name=Phone]').val(),
+                "LightType": $('[name=light_type]').val(),
+                "Quantity": parseInt($('[name=quantity]').val()),
+                "Date": `${date}T${time}`
+            };
+
+            var settings = {
+                "url": "https://localhost:44336/api/SendMail",
+                "method": "POST",
+                "timeout": 0,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "data": JSON.stringify(data),
+            };
+
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+            });
+        });
+
     </script>
 </body>
 
