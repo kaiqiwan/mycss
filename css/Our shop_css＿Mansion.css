@@ -2992,8 +2992,8 @@ footer{
     font-size: 1.5rem;
    
 }
-/* ----------navber下拉選單-桌機板----------------- */
-.outer_ul li {
+ /* ----------navber下拉選單-桌機板----------------- */
+ .outer_ul li {
     list-style: none;
     position: relative;
     white-space: nowrap;
@@ -3002,13 +3002,17 @@ footer{
 }
 .Branch:hover + ul, .Branch_btn:hover{
     /* 滑鼠滑入展開次選單*/
-    text-decoration:none;
+    display: block;
     opacity: 1;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
+    text-decoration:none;
     /*left: -1px;*/
     /* pointer-events: none; */
     /* border-right: 5px; */
+}
+.Branch_btn{
+    display: none;
 }
 .Branch_btn a {
     text-decoration: none;
@@ -3016,6 +3020,9 @@ footer{
 
 .Branch_btn a:hover {
     text-decoration: none;
+}
+.nav_banner .Branch {
+    height: 100px;
 }
 .outer_ul ul li {
     border-bottom: #000 1px solid;
