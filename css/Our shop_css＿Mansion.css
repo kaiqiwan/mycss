@@ -2994,6 +2994,7 @@ footer{
 }
 /* ----------navber下拉選單-桌機板----------------- */
 .outer_ul li {
+    list-style: none;
     position: relative;
     white-space: nowrap;
     /* white-space 屬性決定如何處理元素內的空白字元:nowrap強制不換行 */
@@ -3001,12 +3002,20 @@ footer{
 }
 .Branch:hover + ul, .Branch_btn:hover{
     /* 滑鼠滑入展開次選單*/
+    text-decoration:none;
     opacity: 1;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     /*left: -1px;*/
     /* pointer-events: none; */
     /* border-right: 5px; */
+}
+.Branch_btn a {
+    text-decoration: none;
+}
+
+.Branch_btn a:hover {
+    text-decoration: none;
 }
 .outer_ul ul li {
     border-bottom: #000 1px solid;
